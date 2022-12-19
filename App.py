@@ -7,7 +7,7 @@ import io
 import nltk
 nltk.download('punkt')
 
-st.set_page_config(page_title='NewShot: A Summarised News Portal', page_icon='./Meta/newspaper.ico')
+st.set_page_config(page_title='NewsSummarizer Web Application', page_icon='./Meta/newspaper.ico')
 
 
 def fetch_news_search_topic(topic):
@@ -54,7 +54,7 @@ def display_news(list_of_news, news_quantity):
 
 
 def run():
-    st.title("NewsShots: Summarized News")
+    st.title("NewsSummarizer Web Application")
     image = Image.open('./Meta/newspaper.png')
 
     col1, col2, col3 = st.columns([3, 5, 3])
